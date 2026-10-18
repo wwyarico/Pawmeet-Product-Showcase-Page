@@ -1,0 +1,4 @@
+笔顺引导数据：Hanzi Writer Data / Make Me a Hanzi，按 Arphic Public License 使用。
+https://github.com/chanind/hanzi-writer-data
+本展示仅使用四页标题涉及的笔顺引导，映射为现有小赖字体的逐笔显露遮罩。
+字形、字体、排版保持现有设计。所有路径随页面打包，不依赖在线请求。

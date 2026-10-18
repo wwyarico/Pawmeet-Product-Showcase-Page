@@ -1,0 +1,75 @@
+/* Mobile presentation: paper #fcfcff, ink #28243b, lavender #7560dd,
+   soft blue #edf2ff, peach #fff0e5, mint #eaf5ee. Existing hand lettering
+   stays outside the product iframe. One viewport = one complete chapter. */
+@media(max-width:900px){
+ html{scroll-snap-type:y mandatory;scroll-padding-top:0;scrollbar-width:none}
+ html::-webkit-scrollbar{display:none}
+ body{overflow-x:clip}
+ .chapter,.welcome,.download{height:100svh;height:100dvh;min-height:0;max-height:none;scroll-snap-align:start;scroll-snap-stop:always;padding:94px 20px 38px;overflow:hidden}
+ .site-header{height:82px;padding:0 16px;background:#fcfcfff2}
+ .site-header .wordmark{--brand-dock-width:148;left:16px;top:-2px}
+ .site-header .chapters{left:10px;right:10px;bottom:5px;display:flex;gap:1px;justify-content:space-between}
+ .site-header .chapters button{min-height:34px;font-size:12px;flex:1;padding:6px 3px}
+ .page-track{top:82px;width:2px}
+ .chapter-grid,.social .chapter-grid,.reverse .chapter-grid{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);height:100%;gap:14px;max-width:520px}
+ .chapter .story,.reverse .story,.social .story{grid-column:1;grid-row:1;width:100%;max-width:none;text-align:center}
+ .chapter-caption{display:none}
+ .story h1,.story h2{font-size:clamp(26px,7.4vw,35px);line-height:1.24;letter-spacing:-.6px;margin:0 0 8px}
+ .story .intro{font-size:14px;line-height:1.55;margin:0 0 12px;color:#8c839a}
+ .feature-picker{width:100%;max-width:none;gap:7px;margin:auto}
+ .feature-picker button{font-size:16px;min-height:43px;padding:8px 5px;gap:4px;border-radius:12px}
+ .feature-icon{font-size:18px;width:17px}
+ .feature-explanation{display:none}
+ #meet .switch-guide{font-size:12px;line-height:16px;margin:0 0 10px;padding-right:36px;height:16px}
+ #meet .switch-guide svg{width:35px;height:31px;top:-1px;right:3px}
+ .chapter .showcase,.reverse .showcase,.social .showcase{grid-row:2;grid-column:1;order:0;min-height:0;width:100%;height:100%;padding:0 0 23px;justify-content:center;align-items:center}
+ .phone-dock{height:100%;min-height:0;width:auto;aspect-ratio:.59;max-width:80%;flex:0 1 auto}
+ .phone-shell:not(.is-expanded){border-width:5px;border-radius:25px}
+ .phone-stage{border-radius:20px}
+ .pet-tag{left:5%;width:90%;height:90%;top:2%;max-width:none}
+ .device-caption{bottom:0;font-size:12px;gap:5px;line-height:20px}
+ .device-caption button{width:25px;height:25px;margin-left:4px}
+ .identity-switch{display:none}
+ .gesture-guide{right:-40px;top:30%;width:92px;font-size:12px;transform:rotate(-7deg)}
+ .gesture-guide svg{width:80px;height:80px}
+ .gesture-guide[data-gesture=scroll]{left:-40px;top:30%;width:45px}
+ .gesture-guide[data-gesture=scroll] span{font-size:11px;letter-spacing:1px;left:0}
+ .gesture-guide[data-gesture=scroll] svg{width:45px;height:125px;margin-left:5px}
+ .gesture-guide[data-gesture=pet],.gesture-guide[data-gesture=quiz]{right:-38px;top:16%}
+ .gesture-guide[data-gesture=record],.gesture-guide[data-gesture=react]{right:-38px;bottom:0;top:auto}
+ .next-chapter{bottom:max(4px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);font-size:11px;white-space:nowrap;gap:7px;padding:5px 12px;min-height:30px}
+ .next-chapter svg{width:14px;height:14px}
+ .welcome{padding:0 20px;align-items:center;justify-content:center}
+ .welcome-content{width:100%;max-width:520px;margin:0;transform:translateY(-7dvh)}
+ .welcome .hero-brand-slot{height:92px;width:90%;margin-bottom:22px}
+ .welcome .cover-heading{margin-bottom:27px}
+ .welcome .generated-definition{margin:0 auto}
+ .hero-art{object-fit:cover;object-position:center;opacity:.65}
+ .hero-veil{background:#fcfcff75}
+ .welcome .home-start{bottom:max(22px,env(safe-area-inset-bottom));margin:0;min-height:44px}
+ .download{padding:102px 22px 146px;justify-content:center}
+ .download-eyebrow{font-size:14px;margin-bottom:12px}
+ .download h2{font-size:31px;line-height:1.3;margin-bottom:15px}
+ .download-description{font-size:15px;line-height:1.6;margin-bottom:24px}
+ .download-option{padding:0 12px}
+ .download-option h3{font-size:21px;margin-bottom:6px}
+ .download-option p{font-size:12px;margin-bottom:14px}
+ .download-option button{font-size:14px;padding:10px;min-height:42px}
+ .download-note{font-size:11px;line-height:1.6;margin-top:22px}
+ .contact-footer{left:22px;right:22px;bottom:max(8px,env(safe-area-inset-bottom));min-height:100px;padding:12px 0;gap:12px}
+ .contact-footer a{font-size:16px}.contact-label{font-size:11px}.contact-footer p{font-size:11px}.contact-footer button{font-size:12px}
+}
+@media(max-width:900px) and (max-height:710px){
+ .chapter{padding-top:87px;padding-bottom:32px}.chapter-grid,.reverse .chapter-grid,.social .chapter-grid{gap:10px}
+ .story h1,.story h2{font-size:25px;line-height:1.18;margin-bottom:6px}.story .intro{font-size:12px;line-height:1.4;margin-bottom:9px}
+ .feature-picker button{min-height:39px;font-size:14px}.feature-icon{font-size:16px}
+ .welcome{padding:0 20px}.welcome .hero-brand-slot{height:75px}
+ .download{padding-top:94px;padding-bottom:132px}.download h2{font-size:27px}.download-description{font-size:13px;margin-bottom:16px}.download-eyebrow{margin-bottom:7px}.download-note{margin-top:15px}.platform-icon{height:28px;margin-bottom:0}
+}
+@media(max-width:900px) and (orientation:landscape) and (max-height:520px){
+ .chapter:not(.welcome):not(.download) .chapter-grid{grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr);gap:28px;max-width:780px}
+ .chapter .story{align-self:center}.chapter .showcase{grid-column:2;grid-row:1}
+ .story h1,.story h2{font-size:24px}.story .intro{font-size:12px}
+ .download{padding:90px 20px 40px}.download-content{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;max-width:720px}.download-eyebrow,.download-description,.download-note{display:none}.download-options{grid-column:2;grid-row:1/3}.contact-footer{position:static;min-height:0;border:0;margin-top:15px;padding:0}.contact-footer p{display:none}
+ .welcome-content{max-width:390px;transform:translateY(-2dvh)}.welcome .hero-brand-slot{height:65px;margin-bottom:10px}.welcome .cover-heading{margin-bottom:12px}.welcome .home-start{bottom:0}
+}

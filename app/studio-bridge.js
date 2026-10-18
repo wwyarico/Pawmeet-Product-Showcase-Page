@@ -1,0 +1,4 @@
+(()=>{
+addEventListener('message',e=>{if(e.source!==parent||e.data?.type!=='pawmeet-studio')return;const mode=document.documentElement.dataset.demoMode;if(e.data.action==='pet'&&mode==='profile'&&['1','2'].includes(e.data.id))document.querySelector('.pet-card[data-pet-id="'+e.data.id+'"]')?.click();if(e.data.action==='like'&&mode==='post')document.getElementById('btnLike')?.click();});
+document.addEventListener('click',e=>{if(document.documentElement.dataset.demoMode==='profile'&&e.target.closest('.pet-card'))parent.postMessage({type:'pawmeet-pet-changed',id:document.querySelector('.pet-card.active-pet')?.dataset.petId},'*');if(e.target.closest('#btnLike'))parent.postMessage({type:'pawmeet-like-changed',liked:document.getElementById('btnLike').classList.contains('liked')},'*');});
+})();

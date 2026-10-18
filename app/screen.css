@@ -1,0 +1,24 @@
+html,body{height:100%!important;width:100%!important;overflow:hidden!important;margin:0!important}
+#layerL3{display:flex!important;position:fixed!important;inset:0!important;height:100%!important;width:100%!important;visibility:visible!important;transform:none!important;opacity:1!important}
+.main-view{flex:1;min-height:0}#petLife{position:absolute!important;inset:0!important}
+[data-demo-mode="hub"] #petLife{pointer-events:none}
+[data-demo-mode="message"] #view-message{display:flex!important}
+[data-demo-mode="profile"] #view-profile{display:flex!important}
+[data-demo-mode="recommend"] #view-petgo,[data-demo-mode="online"] #view-petgo,[data-demo-mode="offline"] #view-petgo{display:flex!important}
+#view-events{flex:1;min-height:0}#view-recommend{flex:1;min-height:0}
+*{scrollbar-width:none}button,[onclick]{cursor:default}.pet-card[data-pet-id],#btnLike,#btnBookmark,.reply-action,.comment-input-wrap,#commentCountIcon,[data-send],.topic-b1,[data-demo-quiz]{cursor:pointer}
+.pm-hero-track{overflow:visible!important;scroll-snap-type:none;scroll-behavior:auto}.pm-hero-slide{scroll-snap-align:start;flex-shrink:0}
+.reply-box-overlay.active{display:flex;opacity:1;visibility:visible;z-index:99999}
+.demo-comment-avatar{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#f1eaff;flex-shrink:0;margin-right:10px}.demo-reply-name{color:#8270ac}
+#btnLike.liked,#btnBookmark.saved{color:#7448ef}#btnLike.liked svg,#btnBookmark.saved svg{fill:#e6d8ff;stroke:#7448ef}
+.sub-replies .comment-item{padding:10px 0}.sub-replies .demo-comment-avatar{width:24px;height:24px;font-size:12px}
+/* Keep the original offline card proportions and inline footer. */
+[data-demo-mode="offline"] .event-card{display:block;border-radius:17px;overflow:hidden}
+[data-demo-mode="offline"] .event-img-wrap{width:100%;height:auto!important;aspect-ratio:1.82}
+[data-demo-mode="offline"] .event-img{width:100%;height:100%!important;object-fit:cover}
+[data-demo-mode="offline"] .event-footer{display:flex;align-items:center;justify-content:space-between}
+[data-demo-mode="offline"] .event-join-btn{width:auto;min-width:108px;height:40px}
+#view-circle{display:flex!important;width:100%!important;height:100%!important;position:absolute!important;inset:0!important}.demo-message-heading{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;font-size:24px;background:#fff}.demo-message-heading span{color:#7458ee;background:#f1edff;border-radius:50%;width:34px;height:34px;line-height:34px;text-align:center}#view-message .msg-top-area{padding:12px 25px!important}#view-message .msg-tab-row{display:flex;justify-content:space-between;width:100%}#view-message .msg-tab{font-size:17px!important}#view-message .card-list{padding:0 15px!important}#view-message .demo-message-row{position:relative;padding:17px 0!important;background:#fff!important;border-bottom:1px solid #f3f0f8!important;border-radius:0!important;gap:12px!important;display:flex;align-items:center}#view-message .demo-message-row .avatar-wrap{width:55px!important;height:55px!important;flex:0 0 55px;border-radius:50%;overflow:hidden}#view-message .demo-message-row .card-name{font-size:16px;font-weight:700}#view-message .demo-message-row .card-info{min-width:0;flex:1}#view-message .demo-message-row .card-name-row{display:flex;align-items:center;justify-content:space-between}#view-message .demo-message-row .card-time{position:static;font-size:12px;font-weight:400;color:#9685b7}#view-message .demo-message-row .card-preview{font-size:13px;color:#9685b7;margin-top:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:15px}#view-message .demo-message-row .unread-badge{position:absolute;right:0;bottom:18px;background:#8755ff;color:white;border-radius:14px;padding:2px 5px;font-size:12px}
+
+/* Keep enough track inset for the first identity to center too. */
+#view-profile #petCardsScroll{padding-left:var(--pet-center-gap,0px)!important;padding-right:var(--pet-center-gap,0px)!important}

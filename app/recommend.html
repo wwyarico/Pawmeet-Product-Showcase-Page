@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html data-demo-mode="recommend" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>recommend</title><link href="original.css" rel="stylesheet"/><link href="screen.css" rel="stylesheet"/><link rel="stylesheet" href="polish.css"></head><body data-ready="true"><main class="layer active" id="layerL3"><div class="main-view" id="view-petgo" style="">
+<!-- 顶部 Tab 导航 -->
+<div class="top-nav-area"><div class="top-bar-content"><div class="tabs-container">
+<div class="tab-item current">推荐</div><div class="tab-item inactive">购物</div><div class="tab-item inactive">商家</div><div class="tab-item inactive">活动</div>
+</div></div></div>
+<!-- 推荐子视图 -->
+<div class="app-view" id="view-recommend">
+<div class="search-wrapper"><div class="search-bar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg><span>搜索宠物用品、商家、活动…</span></div></div>
+<div class="location-wrapper"><div class="location-picker"><svg aria-hidden="true" class="ux-icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z M15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path></svg><img alt="" class="petgo-location-icon" data-ux-fallback="1" decoding="async" loading="eager" src="assets/9de8d15fda8ae2ee.webp" style="display: none !important;"/><span class="loc-text">厦门 · 思明区</span><svg class="loc-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div aria-label="切换推荐宠物" class="petgo-pet-switcher" id="petgoRecommendPetSwitcher"><button aria-expanded="false" class="petgo-pet-switcher-toggle" type="button"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/78faff9957c326d2.webp"/><span>奥利奥 Oreo</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="petgo-pet-switcher-menu"><button aria-label="切换为 奥利奥 Oreo" class="petgo-pet-switcher-item active" data-pet-id="1" type="button"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/78faff9957c326d2.webp"/><span>奥利奥 Oreo</span></button><button aria-label="切换为 布丁 Pudding" class="petgo-pet-switcher-item" data-pet-id="2" type="button"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/97d4de284f2e3e04.webp"/><span>布丁 Pudding</span></button></div></div></div>
+<div class="content-scroll-area" id="recommendMainScrollArea" tabindex="0"><div aria-label="宠Go推荐" aria-roledescription="轮播图" class="rf-city-banner pm-hero-carousel" data-pm-carousel="v1" role="region"><div class="pm-hero-viewport"><div class="pm-hero-track"><button aria-label="线下活动，点击进入" class="pm-hero-slide" type="button"><img alt="线下活动推荐配图" data-ux-fallback="1" decoding="async" draggable="false" loading="eager" src="assets/1c990111112af425.webp"/></button><button aria-label="购物，点击进入" class="pm-hero-slide" type="button"><img alt="购物推荐配图" data-ux-fallback="1" decoding="async" draggable="false" loading="eager" src="assets/1542517a1b45760c.webp"/></button><button aria-label="线上活动，点击进入" class="pm-hero-slide" data-demo-quiz="1" type="button"><img alt="线上活动推荐配图" data-ux-fallback="1" decoding="async" draggable="false" loading="eager" src="assets/8042d9a4350e66c3.webp"/></button></div></div><div aria-label="选择推荐内容" class="pm-hero-dots"><button aria-current="true" aria-label="第1张：线下活动" class="pm-hero-dot" type="button"></button><button aria-current="false" aria-label="第2张：购物" class="pm-hero-dot" type="button"></button><button aria-current="false" aria-label="第3张：线上活动" class="pm-hero-dot" type="button"></button></div></div>
+<div class="h-scroll-section"><div class="h-scroll-header"><span class="h-scroll-title" data-rf-done="1"><svg aria-hidden="true" class="rf-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18"></path></svg><span>附近活动</span></span><span class="h-scroll-more" data-rf-action="1" role="button" tabindex="0">更多 ›</span></div><div class="h-scroll-track" id="eventTrack">
+<div class="event-h-card">
+<div class="event-h-img" style="background-image:url('assets/ba72430c87b2f3cf.webp'); background-size:cover; background-position:center;">
+<span class="event-h-badge">热门</span>
+</div>
+<div class="event-h-info">
+<div class="event-h-title">柯基短腿派对 — 撒欢草地局</div>
+<div class="event-h-meta">
+<svg viewBox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+<span>本周日 14:00</span>
+</div>
+<div class="event-h-meta" style="margin-top:2px;">
+<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span>观音山 · 3.2km</span>
+</div>
+</div>
+</div>
+<div class="event-h-card">
+<div class="event-h-img" style="background-image:url('assets/40dc4df3378d0c4a.webp'); background-size:cover; background-position:center;">
+<span class="event-h-badge">公益</span>
+</div>
+<div class="event-h-info">
+<div class="event-h-title">宠物领养日 · 给流浪毛孩一个家</div>
+<div class="event-h-meta">
+<svg viewBox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+<span>周六 10:00-17:00</span>
+</div>
+<div class="event-h-meta" style="margin-top:2px;">
+<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span>SM城市广场 · 1.8km</span>
+</div>
+</div>
+</div>
+<div class="event-h-card">
+<div class="event-h-img" style="background-image:url('assets/3e07a6947bc72e6c.webp'); background-size:cover; background-position:center;">
+<span class="event-h-badge">竞技</span>
+</div>
+<div class="event-h-info">
+<div class="event-h-title">毛孩子游泳大赛 (小型犬专场)</div>
+<div class="event-h-meta">
+<svg viewBox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+<span>下周六 9:00</span>
+</div>
+<div class="event-h-meta" style="margin-top:2px;">
+<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span>海沧湾公园 · 5.1km</span>
+</div>
+</div>
+</div>
+</div></div>
+<div class="h-scroll-section"><div class="h-scroll-header"><span class="h-scroll-title" data-rf-done="1"><svg aria-hidden="true" class="rf-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M8 5 9.5 3h5L16 5h4a2 2 0 0 1 2 2v12H2V7a2 2 0 0 1 2-2Z"></path><circle cx="12" cy="12" r="4"></circle></svg><span>热门打卡</span></span><span class="h-scroll-more" data-rf-action="1" role="button" tabindex="0">更多 ›</span></div><div class="h-scroll-track" id="checkinTrack">
+<div class="checkin-h-card">
+<img alt="checkin" class="checkin-h-img" data-ux-fallback="1" decoding="async" loading="eager" src="assets/b7faba99ad9312bb.webp"/>
+<div class="checkin-h-info">
+<div class="checkin-h-name">Paw &amp; Claw 猫咖</div>
+<div class="checkin-h-count">
+<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+
+          1,280人打卡
+
+        </div>
+</div>
+</div>
+<div class="checkin-h-card">
+<img alt="checkin" class="checkin-h-img" data-ux-fallback="1" decoding="async" loading="eager" src="assets/967e8c21fbcb5baa.webp"/>
+<div class="checkin-h-info">
+<div class="checkin-h-name">萌宠沙滩乐园</div>
+<div class="checkin-h-count">
+<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+
+          960人打卡
+
+        </div>
+</div>
+</div>
+<div class="checkin-h-card">
+<img alt="checkin" class="checkin-h-img" data-ux-fallback="1" decoding="async" loading="eager" src="assets/f268c2381fb3ed56.webp"/>
+<div class="checkin-h-info">
+<div class="checkin-h-name">宠物友好文创市集</div>
+<div class="checkin-h-count">
+<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+
+          2,450人打卡
+
+        </div>
+</div>
+</div>
+</div></div>
+<div class="h-scroll-section"><div class="h-scroll-header"><span class="h-scroll-title" data-rf-done="1"><svg aria-hidden="true" class="rf-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>附近新店</span></span><span class="h-scroll-more" data-rf-action="1" role="button" tabindex="0">更多 ›</span></div><div class="h-scroll-track" id="newshopTrack">
+<div class="newshop-h-card">
+<img alt="new shop" class="newshop-h-img" data-ux-fallback="1" decoding="async" loading="eager" src="assets/440b3a3e7dc82469.webp"/>
+<div class="newshop-h-info">
+<div class="newshop-h-name">爪爪宠物烘焙坊</div>
+<div class="newshop-h-tags">
+<span class="newshop-h-tag new">新店开业</span><span class="newshop-h-tag discount">全场8折</span>
+</div>
+</div>
+</div>
+<div class="newshop-h-card">
+<img alt="new shop" class="newshop-h-img" data-ux-fallback="1" decoding="async" loading="eager" src="assets/cc759d3cb6e511d3.webp"/>
+<div class="newshop-h-info">
+<div class="newshop-h-name">毛球宠物生活馆</div>
+<div class="newshop-h-tags">
+<span class="newshop-h-tag new">试营业中</span>
+</div>
+</div>
+</div>
+<div class="newshop-h-card">
+<img alt="new shop" class="newshop-h-img" data-ux-fallback="1" decoding="async" loading="eager" src="assets/ac70a1e6dab9b547.webp"/>
+<div class="newshop-h-info">
+<div class="newshop-h-name">宠·悦 SPA会所</div>
+<div class="newshop-h-tags">
+<span class="newshop-h-tag new">新入驻</span><span class="newshop-h-tag discount">体验价</span>
+</div>
+</div>
+</div>
+</div></div>
+<div class="waterfall-container"><div class="section-header"><img alt="" class="petgo-section-icon" data-ux-fallback="1" decoding="async" loading="eager" src="assets/b7f64442d8f1c626.webp"/>猜你喜欢</div><div class="masonry-grid" id="recommendGrid"><div class="masonry-col" id="recColLeft"><div class="post-card" data-reco-cache="d19"><div class="post-img-wrap"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/b1af4a212ead5e8b.webp"/><span class="rec-type-badge"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/b7f64442d8f1c626.webp"/>商品</span></div><div class="post-body"><div class="post-title">鲜肉低温烘焙全犬粮 1.5kg</div><div class="rec-card-sub">¥129</div></div></div><div class="post-card" data-reco-cache="d21"><div class="post-img-wrap"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/008b7bd7b465ee2a.webp"/><span class="rec-type-badge"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/b7f64442d8f1c626.webp"/>商品</span></div><div class="post-body"><div class="post-title">低敏无谷三文鱼狗粮</div><div class="rec-card-sub">¥189</div></div></div><div class="post-card" data-reco-cache="d23"><div class="post-img-wrap"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/03d3028608bc55ee.webp"/><span class="rec-type-badge"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/b7f64442d8f1c626.webp"/>商品</span></div><div class="post-body"><div class="post-title">耐咬互动玩具套装</div><div class="rec-card-sub">¥45</div></div></div></div><div class="masonry-col" id="recColRight"><div class="post-card" data-reco-cache="d20"><div class="post-img-wrap"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/483cd92e5f795ff4.webp"/><span class="rec-type-badge"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/20a788bd44e565a5.webp"/>商家</span></div><div class="post-body"><div class="post-title">萌宠造型(沙坡尾店)</div><div class="rec-card-sub"></div></div></div><div class="post-card" data-reco-cache="d22"><div class="post-img-wrap"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/d86b9e3b6d5067a1.webp"/><span class="rec-type-badge"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/20a788bd44e565a5.webp"/>商家</span></div><div class="post-body"><div class="post-title">Paw &amp; Claw 咖啡馆</div><div class="rec-card-sub"></div></div></div><div class="post-card" data-reco-cache="d24"><div class="post-img-wrap"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/9b13ea2653490c64.webp"/><span class="rec-type-badge"><img alt="" data-ux-fallback="1" decoding="async" loading="eager" src="assets/20a788bd44e565a5.webp"/>商家</span></div><div class="post-body"><div class="post-title">安心寄养宠物酒店</div><div class="rec-card-sub"></div></div></div></div></div></div>
+</div>
+</div>
+<!-- 购物子视图 -->
+<!-- 商家子视图 -->
+<!-- 活动子视图 -->
+</div><div class="bottom-nav">
+<div class="nav-item"><img alt="" class="emoji-v2-icon" decoding="async" loading="lazy" src="./assets/b75ada54b715344495e4e7d4337eefef1ba9b1f883b98bf22578c657e3dfa77b.webp"/><span>探索</span></div>
+<div class="nav-item"><img alt="" class="emoji-v2-icon" decoding="async" loading="lazy" src="./assets/f0e5ea9f985cba2ebe6738a17732b8b260447e60d034eb7984913700f07cffb8.png"/><span>圈子</span></div>
+<div class="nav-item active"><img alt="" class="emoji-v2-icon" decoding="async" loading="lazy" src="./assets/bafacd11c77e425149916d4b55ff1823121f9493a74a90dbbe4f61c51e09441f.png"/><span>宠go</span></div>
+<div class="nav-item" id="navMessage"><img alt="" class="emoji-v2-icon" decoding="async" loading="lazy" src="./assets/3526229e830a2b95b26b5c8f61c59660ca10d2bf4f7a0af4053317cc65bbd9dc.png"/><span>消息</span><span class="nav-badge" id="msgBadge" style="display:none;"></span></div>
+<div class="nav-item"><img alt="" class="emoji-v2-icon" decoding="async" loading="lazy" src="./assets/7e7fb74e7d5617ca23952d0da4387a41084093b32c992fe6cd0cd866599a8f4c.png"/><span>我的</span></div>
+</div></main><script src="memory.js"></script><script src="screen.js"></script><script src="studio-bridge.js"></script><script src="carousel.js"></script><script src="gesture-bridge.js"></script></body></html>
